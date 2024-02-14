@@ -1,0 +1,24 @@
+# This is Git's per-user configuration file.
+[user]
+	email = larspaenij@hotmail.com
+	name = Lars Spaenij
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[alias]
+	count-lines = "! git log --author=\"$1\" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf \"added lines: %s, removed lines: %s, total lines: %s\\n\", add, subs, loc }' #"
+	unstage = reset HEAD --
+	rbm = rebase master -i
+	cprev = checkout @{-1}
+	logp = log --pretty=format:\"%h %s\" --graph
+	cb = checkout -b
+	c = checkout
+	cm = commit -m
+	ch = checkout
+	chm = checkout master
+	rb = rebase
+	rbom = rebase origin/master -i
