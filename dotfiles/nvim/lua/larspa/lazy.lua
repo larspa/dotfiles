@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "larspa.plugins" }, { import = "larspa.plugins.lsp" } }, {
   install = {
-    colorscheme = { "tokyonight" },
+    colorscheme = { "moonfly" },
   },
   checker = {
     enabled = true,

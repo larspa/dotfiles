@@ -30,14 +30,12 @@ return {
         "tsserver",
         "html",
         "cssls",
-        "tailwindcss",
-        "svelte",
         "lua_ls",
         "graphql",
-        "emmet_ls",
         "prismals",
-        "pyright",
         "rust_analyzer",
+        "elixirls",
+        "terraformls",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed

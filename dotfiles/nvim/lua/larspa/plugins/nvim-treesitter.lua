@@ -6,6 +6,7 @@ return {
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
       "windwp/nvim-ts-autotag",
+      "nvim-treesitter/nvim-tree-docs",
     },
     config = function()
       -- import nvim-treesitter plugin
@@ -34,7 +35,6 @@ return {
           "prisma",
           "markdown",
           "markdown_inline",
-          "svelte",
           "graphql",
           "bash",
           "lua",
@@ -43,6 +43,9 @@ return {
           "gitignore",
           "query",
           "vimdoc",
+          "elixir",
+          "rust",
+          "terraform",
         },
         incremental_selection = {
           enable = true,
@@ -57,6 +60,10 @@ return {
 
       -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
       require("ts_context_commentstring").setup({})
+
+      require("nvim-treesitter.configs").setup({
+        tree_docs = { enable = true },
+      })
     end,
   },
 }

@@ -7,11 +7,6 @@ return {
       desc = "Toggle Treesitter",
     },
     {
-      "<leader>to",
-      "<CMD>TSJSplit<CR>",
-      desc = "Toggle Treesitter Split",
-    },
-    {
       "<leader>tj",
       "<CMD>TSJJoin<CR>",
       desc = "Toggle Treesitter Join",

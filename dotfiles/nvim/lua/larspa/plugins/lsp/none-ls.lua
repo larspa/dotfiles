@@ -16,8 +16,6 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "black", -- python formatter
-        "pylint", -- python linter
         "eslint", -- js linter
       },
     })
@@ -46,9 +44,7 @@ return {
             "json",
             "css",
             "scss",
-            "less",
             "html",
-            "vue",
           },
         }), -- js/ts formatter
         formatting.stylua, -- lua formatter

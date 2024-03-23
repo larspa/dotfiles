@@ -1,0 +1,7 @@
+.git
+.syncignore
+.gitignore
+.DS_Store
+./ansible/
+sync.sh
+bootstrap.sh

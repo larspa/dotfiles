@@ -116,12 +116,23 @@ return {
       },
     })
 
+    lspconfig["eslint"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     lspconfig["rust_analyzer"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    lspconfig["eslint"].setup({
+    lspconfig["elixirls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      cmd = { "elixir-ls" },
+    })
+
+    lspconfig["terraformls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
